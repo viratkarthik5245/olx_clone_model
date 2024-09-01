@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="icon" href="./images/olxbrowserlogo.jpg">
+  <title>-Buy and Sell for free anywhere</title>
+
+</head>
+
+<body>
+  <!-- NavBar -->
+
+  <nav class="header container-fluid">
+    <div class="nav-bar container">
+      <div class="first-nav row">
+        <div class="logo col col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+          <a href="./index.html">
+            
+          </a>
+        </div>
+
+        <div class=" col col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+          <div class="Motors">
+            <a href="#" class="Car">
+              <i class="fa-solid fa-car-rear"></i>
+              <p>Cars</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+          <div class="property">
+            <a href="#" class="building">
+              <i class="ri-bike-fill"></i>
+              <p>Bikes</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===toogle=== -->
+      <div class="row">
+        <div class="toogle col col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1">
+          <nav class="navbar ">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="toogle1 col col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="second-nav row">
+              <div class="logo1 col col-4 col-sm-2 col-md-2 col-lg-1">
+                <img src="./images/logo.webp" class="olxlogo">
+              </div>
+
+              <div class="select col col-8 col-sm-4 col-md-3 col-lg-3">
+                <input type="search" class="searchclass mt-1 ps-4" placeholder="Search Location">
+              </div>
+
+              <div class="search_box col col-12 col-sm-6 col-md-4 col-lg-5">
+                <input type="text" class="searchclass mt-1" placeholder="Find Cars, mobile phone and More....">
+                <i class="fa-solid fa-magnifying-glass mt-1"></i>
+              </div>
+
+              <div class=" col col-3 col-sm-3 col-md-1 col-lg-1">
+                <div class="login">
+                  <a id="log" href="./index.html">LogOut</a>
+                </div>
+              </div>
+
+              <div class="col col-3 col-sm-3 col-md-2 col-lg-2">
+                <div class="selling_page" onclick="sell()">
+                  <button>
+                    <i class="fa-solid fa-plus "></i>
+                    <p>SELL</p>
+                  </button>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#olxNavbar"><span
+                    class="navbar-toggler-icon"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- =========toogle==== -->
+
+
+    </div>
+  </nav>
+
+
+
+  <!-- categories -->
+
+  <div class="categories container-fluid">
+    <div class="categories-div container">
+      <div>
+        <ul class="categories-list col ">
+          <li class="nav-item col" id="Cat-list">
+            <a class="nav-link dropdown-toggle avtive" id="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ALL CATEGORIES
+            </a>
+            <ul class="dropdown-menu">
+             
+              <li><a class="dropdown-item" href="#">Cars</a></li>
+              <li><a class="dropdown-item" href="#">Motorcycles</a></li>
+              
+            </ul>
+          </li>
+          
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Cars</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" href="#">Motorcycles</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ads -->
+
+  <div id="carouselExampleSlidesOnly" class="container carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/Nimg.webp" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/Nimg.webp" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/Nimg.webp" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+
+  <!-- Products -->
+
+  <div class="container mt-4" id="product-container">
+    <h4>Fresh recommendations</h4>
+    <div id='row-1' class="row mt-3">
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="data:image/jpeg;base64,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" class="cardimg" alt="...">
+        </div>
+        <div id='cardbo' class="card-body">
+          <p class="card-text">Bike Engine Oil</p>
+          <h5 class="card-title">Rs 500</h5>
+          <p class="card-text"><small class="text-muted">Connaught Place, Delhi. 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/free-photo/high-angle-arrangement-with-bike-pieces_23-2148932625.jpg?t=st=1725167622~exp=1725171222~hmac=7726fe5fda2b903a4feb38bd78907fb35f34b39ebf254d929ef5004b1ed41328&w=900" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Bike Chain </p>
+          <h5 class="card-title">Rs 1200</h5>
+          <p class="card-text"><small class="text-muted">Marathahalli, Bangalore. 1 week ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/free-photo/view-car-shop-be-repaired_23-2150170010.jpg?t=st=1725169944~exp=1725173544~hmac=535cc226011702f0c686bd11d791058742693b11a40b87811d6da512b06db9c1&w=900" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Car Brake Pads</p>
+          <h5 class="card-title">Rs 3000</h5>
+          <p class="card-text"><small class="text-muted">Kolkata, West Bengal. 0 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/premium-photo/black-car-battery-closeup-white-background_508835-452.jpg?ga=GA1.1.21689704.1725167594&semt=ais_hybrid" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Car Battery</p>
+          <h5 class="card-title">Rs 10,000</h5>
+          <p class="card-text"><small class="text-muted">Andheri, Mumbai. 45 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-3">
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/free-photo/engine-lamp-metal-shiny-chrome_1203-4586.jpg?t=st=1725170119~exp=1725173719~hmac=5d9857df6d06b4031000a59aaf0f68200c37a8807c4dfb1e9882e3e986c19928&w=900" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Bike Headlight</p>
+          <h5 class="card-title">1000</h5>
+          <p class="card-text"><small class="text-muted">Jayanagar, Bangalore. 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/free-photo/different-car-accessories-composition_23-2149030441.jpg?ga=GA1.1.21689704.1725167594&semt=ais_hybrid" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Car Spark Plugs</p>
+          <h5 class="card-title">800</h5>
+          <p class="card-text"><small class="text-muted">Chennai, Tamil Nadu. 1 week ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/free-photo/top-view-open-car-service_23-2150171254.jpg?t=st=1725170302~exp=1725173902~hmac=19b1a3c489aca178aaa389805403ace68c005ca5bccda9012cd3870314cfe105&w=900" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Car Clutch Kit</p>
+          <h5 class="card-title">6000</h5>
+          <p class="card-text"><small class="text-muted">Hyderabad, Telangana. 0 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://img.freepik.com/free-photo/close-up-man-preparing-steal-motorcycle_23-2149133034.jpg?t=st=1725170394~exp=1725173994~hmac=028e77195fedf0e0d2569c28b407cb7665d209cd6e61253dc9387474340ad46e&w=900" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">Bike Clutch Cable</p>
+          <h5 class="card-title">Rs 300</h5>
+          <p class="card-text"><small class="text-muted">Pune, Maharashtra. 45 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="button">
+    <button>Load more</button>
+  </div>
+  <!-- footer -->
+  <div class="footer1 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="footerimg col col-6 col-sm-6 col-md-4">
+          <img src="./images/Fimg.webp" alt="">
+        </div>
+        <div class="footercontent col col-6 col-sm-6 col-md-4">
+          <h2 class="mt-3">TRY THE MOTORPARTS HUB APP</h2>
+          <p>Buy, sell and find just about anything using the app on your mobile.</p>
+        </div>
+        <div class="footerapp col col-12 col-sm-12 col-md-4">
+          <div>
+            <p class="mt-5">GET YOUR APP Today</p>
+          </div>
+          <img src="./images/appicon1.svg" alt="">
+          <img src="./images/appicon2.svg" alt="">
+          <img src="./images/appicon3.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer2 container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="footer2content col col-6 col-sm-4 col-md-2">
+                <h5 class="mt-3">POPULAR CATEGORIES</h5>
+                <p>Bike Chains</p>
+                <p>Car Batteries</p>
+                <p>Motorcycle Tires</p>
+                <p>Car Air Filters</p>
+            </div>
+            <div class="footer2content col col-6 col-sm-4 col-md-2">
+                <h5 class="mt-3">TRENDING SEARCHES</h5>
+                <p>Bike Spare Parts</p>
+                <p>Car Engine Components</p>
+                <p>Motorcycle Accessories</p>
+                <p>Car Audio Systems</p>
+            </div>
+            <div class="footer2content col col-6 col-sm-4 col-md-3">
+                <h5 class="mt-3">ABOUT US</h5>
+                <p>About MOTORPARTS HUB</p>
+                <p>MOTORPARTS HUB Blog</p>
+                <p>Contact Us</p>
+                <p>MOTORPARTS HUB for Businesses</p>
+            </div>
+            <div class="footer2content col col-6 col-sm-4 col-md-2">
+                <h5 class="mt-3">MOTORPARTS HUB</h5>
+                <p>Help</p>
+                <p>Sitemap</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footerapp2 col col-12 col-sm-6 col-md-3">
+                <div>
+                    <p class="mt-3">FOLLOW US</p>
+                </div>
+                <div>
+                    <img src="./images/F1.svg" class="footerappimg">
+                    <img src="./images/F2.svg" class="footerappimg">
+                    <img src="./images/F3.svg" class="footerappimg">
+                    <img src="./images/F4.svg" class="footerappimg">
+                </div>
+                <div>
+                    <img src="./images/appicon1.svg" class="footerappimg2">
+                    <img src="./images/appicon2.svg" class="footerappimg2">
+                    <img src="./images/appicon3.svg" class="footerappimg2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="footer3 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <p> <b> Free Classifieds in INDIA </b>. © 2024 MOTORPARTS HUB</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
